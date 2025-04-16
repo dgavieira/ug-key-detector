@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+venv/
+.env
+
+# Poetry
+.poetry/
+poetry.lock
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Chroma vector store
+vector_store/

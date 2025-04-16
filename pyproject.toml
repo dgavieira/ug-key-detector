@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "ug-key-detector"
+version = "0.1.0"
+description = "RAG‑driven key detection from Ultimate‑Guitar chord pages."
+authors = ["Your Name <you@example.com>"]
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111"
+uvicorn = { extras = ["standard"], version = "^0.29" }
+httpx = { extras = ["http2"], version = "^0.27" }
+beautifulsoup4 = "^4.12"
+lxml = "^5.2"
+music21 = "^9.1"
+pydantic = "^2.7"
+structlog = "^24.1"
+rich = "^13.7"
+llama-index = "^0.11"
+chromadb = "^0.5"
+openai = "^1.25"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.2"
+pytest-asyncio = "^0.23"
+ruff = "^0.4"
+black = "^24.4"
+anyio = "^4.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
